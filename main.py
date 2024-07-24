@@ -3,6 +3,18 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import koreanize-matplotlib
 
+import pandas as pd
+
+# CSV 파일 경로
+file_path = '/mnt/data/202406_202406_연령별인구현황_월간.csv'
+
+# 데이터 읽기
+data = pd.read_csv(file_path, encoding='cp949')  # 한국어 인코딩 (euc-kr 또는 cp949)로 읽기
+
+# 데이터 확인
+data.head()
+
+
 # 데이터 파일 경로
 file_path = '/mnt/data/202406_202406_연령별인구현황_월간.csv'
 
